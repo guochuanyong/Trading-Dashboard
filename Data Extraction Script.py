@@ -40,7 +40,7 @@ rows = [
 
 df_sp500_output = pd.DataFrame(rows)
 
-df_sp500_output.to_csv("sp500_tickers.csv", index=False)
+#df_sp500_output.to_csv("sp500_tickers.csv", index=False)
 
 # Make a copy to avoid mutating original
 df_sp500_enriched = df_sp500_output.copy()
@@ -74,6 +74,7 @@ for ticker in tqdm(
 df_sp500_enriched["Company_Name"] = company_names
 df_sp500_enriched["Market_Cap"] = market_caps
 
+df_sp500_enriched.to_csv("sp500_tickers.csv", index=False)
 
 # 1️⃣ Extract ticker list
 tickers = df_sp500_output["Ticker Symbol"].dropna().unique().tolist()
