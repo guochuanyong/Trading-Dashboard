@@ -40,7 +40,7 @@ rows = [
 
 df_sp500_output = pd.DataFrame(rows)
 
-#df_sp500_output.to_csv("sp500_tickers.csv", index=False)
+
 
 # Make a copy to avoid mutating original
 df_sp500_enriched = df_sp500_output.copy()
