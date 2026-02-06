@@ -65,8 +65,7 @@ The resulting dashboard supports index comparisons, company-level analysis, and 
 ## ▶️ User Instructions
 
 ### 1️⃣ Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/guochuanyong/Trading-Dashboard.git
 
 ### 2️⃣ Install Python dependencies
 pip install pandas requests yfinance tqdm
